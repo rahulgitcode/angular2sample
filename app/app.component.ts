@@ -3,6 +3,7 @@ import {CoursesComponent} from './courses.component'
 import {StarComponent} from './star.component'
 import {VoterComponent} from './voter.component'
 import {TweetComponent} from './tweet.component'
+import {SimpleFormComponent} from './simpleform.component'
 
 @Component({
     selector: 'my-app',
@@ -34,8 +35,9 @@ import {TweetComponent} from './tweet.component'
                     (vote)="(onVote($event))"
                 ></voter>
                 <tweet></tweet>
+                <simple-form></simple-form>
                 `,
-    directives: [CoursesComponent,StarComponent, VoterComponent, TweetComponent]
+    directives: [CoursesComponent,StarComponent, VoterComponent, TweetComponent, SimpleFormComponent]
 })
 export class AppComponent {
     text= "sample text";
